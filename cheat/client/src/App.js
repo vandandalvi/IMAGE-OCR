@@ -116,7 +116,7 @@ function App() {
         setOcrProgress(100);
         // Send to backend
         try {
-          const res = await fetch("http://localhost:5000/chat", {
+          const res = await fetch("https://image-ocr-hanb.onrender.com/ocr", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ text }),
